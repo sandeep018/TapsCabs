@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  carouselOptions = {
+  carouselOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,

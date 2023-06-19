@@ -105,8 +105,7 @@
             <div class="col-sm-12 space_40"></div>
             <div class="col-sm-12">
 
-                <owl-carousel [options]="carouselOptions" [items]="images"
-                    [carouselClasses]="['owl-theme',  'sliding']">
+                <owl-carousel-o [options]="carouselOptions">
                     <div class="item">
                         <div class="flight_owl">
                             <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
@@ -219,11 +218,17 @@
                             </table>
                         </div>
                     </div>
-                </owl-carousel>
+                </owl-carousel-o>
 
             </div>
 
-
+            <div>Some tags before</div>
+            <owl-carousel-o [options]="carouselOptions">
+                <ng-template carouselSlide>Slide 1</ng-template>
+                <ng-template carouselSlide>Slide 2</ng-template>
+                <ng-template carouselSlide>Slide 3</ng-template>
+            </owl-carousel-o>
+            <div>Some tags after</div>
 
 
 

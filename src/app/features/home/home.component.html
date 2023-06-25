@@ -1,92 +1,108 @@
-<section class="top-header">
+<app-header></app-header>
+<app-searchbox></app-searchbox>
+<section class="popular-package my-4">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li> <a href="#"> <i class="fas fa-envelope"></i> help@tapscabs.com </a></li>
-                    <li><a href="#"><i class="fas fa-phone-alt"></i> +91 7248772488</a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"> <i class="fab fa-twitter"></i> </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-6 text-end"> <button type="button" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Sign in</button></div>
-        </div>
-    </div>
-
-</section>
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6"> <a href="#">
-                    <img src="assets/images/logo.jpg">
-                </a></div>
-            <div class="col-lg-6">
-                <div class="support float-end"><span><i class="fas fa-headset"></i> 24 X 7</span> 0044 4466 33384</div>
-            </div>
-
-        </div>
-    </div>
-
-</header>
-
-
-<section class="banner-section position-relative">
-    <img src="assets/images/banner.jpg">
-
-    <div class="main-search">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8">
-                    <div class="text-center great-car">
-                        <h1>Great car hire deals.</h1>
-                        <p>Taps Cabs travels represent the TAPSCABS.COM, which is the India's based online booking
-                            system of
-                            cab rentals in India as the master licensee of Global Travels.
-                        </p>
-                    </div>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">Cabs</button>
-                        </li>
-                        <!-- <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
-                                type="button" role="tab" aria-controls="messages"
-                                aria-selected="false">Messages</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
-                                type="button" role="tab" aria-controls="settings"
-                                aria-selected="false">Settings</button>
-                        </li> -->
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h2 class="text-center py-5">In Progress</h2>
-                        </div>
-                        <!-- <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div>
-                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">4</div> -->
-                    </div>
+            <div class="col-sm-12">
+                <div class="heading">
+                    <h4>Popular Packages</h4>
+                    <p>World's best tourist destinations</p>
+                    <span></span>
                 </div>
+
+
+
             </div>
+            <div class="col-lg-12">
+                <owl-carousel-o [options]="PopularPackages">
+                    <ng-template carouselSlide>
+                        <div class="package_detail">
+                            <div class="img_box"><img alt="france" src="assets/images/france.png"></div>
+                            <div class="detail">
+                                <h4>France</h4>
+                                <div class="row">
+                                    <div class="col-12  col-sm-12 col-md-6">
+                                        <p>Starting From</p>
+                                        <p>AED 4350.00</p>
+                                    </div>
+                                    <div class="col-12  col-sm-12 col-md-6"> <a href="#">View Package
+                                        </a></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="package_detail">
+                            <div class="img_box"><img alt="Paris" src="assets/images/paris.png"></div>
+                            <div class="detail">
+                                <h4>Paris</h4>
+                                <div class="row">
+                                    <div class="col-12  col-sm-12 col-md-6">
+                                        <p>Starting From</p>
+                                        <p>AED 4350.00</p>
+                                    </div>
+                                    <div class="col-12  col-sm-12 col-md-6"> <a href="#">View Package
+                                        </a></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="package_detail">
+                            <div class="img_box"><img alt="Bali" src="assets/images/Bali.png"></div>
+                            <div class="detail">
+                                <h4>Bali</h4>
+                                <div class="row">
+                                    <div class="col-12  col-sm-12 col-md-6">
+                                        <p>Starting From</p>
+                                        <p>AED 4350.00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6"> <a href="#">View Package</a></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="package_detail">
+                            <div class="img_box"><img alt="Bali" src="assets/images/Bali.png"></div>
+                            <div class="detail">
+                                <h4>Bali</h4>
+                                <div class="row">
+                                    <div class="col-12  col-sm-12 col-md-6">
+                                        <p>Starting From</p>
+                                        <p>AED 4350.00</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6"> <a href="#">View Package</a></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+
+            </div>
+
+
+            <div class="col-sm-12">
+                <a href="#" class="View-All-Packages">View More Packages <i class="fas fa-angle-right"></i></a>
+
+
+            </div>
+
+
         </div>
 
     </div>
+
 </section>
-<section class="popular_routes">
+<section class="popular_routes my-4">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -102,133 +118,142 @@
 
 
             </div>
-            <div class="col-sm-12 space_40"></div>
-            <div class="col-sm-12">
+
+            <div class="col-sm-12 pb-5">
 
                 <owl-carousel-o [options]="carouselOptions">
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flight_owl">
-                            <span><img src="assets/images/Popularroutes/flight-plane.svg"></span>
-                            <table>
-                                <tr>
-                                    <td rowspan="2">
-                                        <div class="duration_dot"></div>
-                                    </td>
-                                    <td>Dubai</td>
-                                </tr>
-                                <tr>
-                                    <td>Delhi</td>
-                                </tr>
-                            </table>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="item">
+                            <div class="flight_owl">
+                                <span><i class="fas fa-car"></i></span>
+                                <table>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div class="duration_dot"></div>
+                                        </td>
+                                        <td>Dubai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delhi</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
+                    </ng-template>
                 </owl-carousel-o>
 
             </div>
 
-            <div>Some tags before</div>
-            <owl-carousel-o [options]="carouselOptions">
-                <ng-template carouselSlide>Slide 1</ng-template>
-                <ng-template carouselSlide>Slide 2</ng-template>
-                <ng-template carouselSlide>Slide 3</ng-template>
-            </owl-carousel-o>
-            <div>Some tags after</div>
+
+
 
 
 
@@ -237,7 +262,7 @@
 
 
 </section>
-
+<app-footer></app-footer>
 <!-- Login -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

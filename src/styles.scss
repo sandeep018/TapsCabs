@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 :root {
     --primary: #ffcc00;
     --font-color: #333333;
     --white: #fff;
+}
+
+:root {
+    // --mdc-theme-primary: #ffcc00;
+    // --mdc-protected-button-container-color: #ffcc00 !important;
+
 }
 
 html,
@@ -35,4 +42,70 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: var(--primary);
+}
+
+.mdc-button {
+    background-color: var(--primary) !important;
+}
+
+.mat-mdc-option {
+    min-height: 30px !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent;
+
+}
+
+::ng-deep .mat-form-field-outline-start {
+    border-radius: 28px 0 0 28px !important;
+    min-width: 28px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 28px 28px 0 !important;
+}
+
+.mat-mdc-form-field-infix {
+    min-height: 34px !important;
+    padding: 0 !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: rgb(201 201 201 / 42%);
+}
+
+.mdc-text-field--filled .mdc-line-ripple::after {
+    border-bottom-color: var(--primary);
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled):hover .mdc-line-ripple::before {
+    border-bottom-color: var(--primary);
+}
+
+.mat-mdc-icon-button.mat-mdc-button-base {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    --mdc-icon-button-icon-size: 1.2rem;
 }

@@ -1,0 +1,93 @@
+footer {
+    background: #333;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+footer .f-menu {
+    display: inline;
+    color: #fff;
+}
+
+footer .f-menu {
+    display: inline;
+    margin-left: 0px;
+    color: #fff;
+}
+
+footer .f-menu li {
+    display: inline;
+    margin-right: 47px;
+}
+
+footer .f-menu li a {
+    color: var(--primary);
+}
+
+
+
+
+.copyright {
+    background: #FFFFFF;
+    color: var(--font-color);
+    padding: 8px 0;
+    text-align: center;
+}
+
+footer .social li {
+    float: left;
+    margin-right: 10px;
+}
+
+footer .social li a {
+    transform: rotate(0deg);
+    transition: .5s;
+    display: inline-block;
+    color: var(--primary);
+}
+
+footer .social li a:hover {
+    transition: .5s;
+    transform: rotate(360deg);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+button.scroll-to-top.show-scroll i:hover {
+    color: var(--primary);
+    transition: .3s;
+}
+
+.show-scroll {
+    opacity: 1;
+}
+
+
+@media screen and (max-width:767px) {
+    footer .f-menu li {
+        display: block;
+        margin-right: 0px;
+        padding: 2px 0px;
+        border-bottom: 1px solid var(--primary);
+    }
+
+    .float-right {
+        float: left !important;
+        margin-top: 18px;
+    }
+
+    .ssl {
+        margin-bottom: 14px;
+    }
+
+    .ssl img {
+        margin-right: 6px;
+    }
+}

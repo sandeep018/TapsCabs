@@ -1,0 +1,193 @@
+<section class="banner-section position-relative">
+    <img src="assets/images/banner.jpg">
+
+    <div class="main-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center great-car">
+                        <h1>Great car hire deals.</h1>
+                        <p>Taps Cabs travels represent the TAPSCABS.COM, which is the India's based online booking
+                            system of
+                            cab rentals in India as the master licensee of Global Travels.
+                        </p>
+                    </div>
+                    <div class="search-box">
+                        <div class="container-fluid mb-3">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                                aria-selected="true">One way</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#profile" type="button" role="tab"
+                                                aria-controls="profile" aria-selected="false">Round Trip
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="messages-tab" data-bs-toggle="tab"
+                                                data-bs-target="#messages" type="button" role="tab"
+                                                aria-controls="messages" aria-selected="false">Local</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="settings-tab" data-bs-toggle="tab"
+                                                data-bs-target="#settings" type="button" role="tab"
+                                                aria-controls="settings" aria-selected="false">Airport</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-3"><mat-label class="label">FROM</mat-label> <mat-form-field
+                                                class="w-100">
+
+                                                <input matInput type="text">
+
+                                            </mat-form-field></div>
+                                        <div class="col-sm-3"> <mat-label class="label">To</mat-label> <mat-form-field
+                                                class="w-100">
+
+                                                <input matInput type="text">
+
+                                            </mat-form-field></div>
+                                        <div class="col-sm-3"> <mat-label class="label">PICK
+                                                UP</mat-label><mat-form-field class="w-100">
+
+                                                <input matInput [matDatepicker]="picker">
+                                                <mat-datepicker-toggle matIconSuffix
+                                                    [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                            </mat-form-field></div>
+                                        <div class="col-sm-3"> <mat-label class="label">PICK UP AT</mat-label>
+                                            <mat-form-field class="w-100">
+
+                                                <mat-select name="food">
+                                                    <mat-option value="Select Time">Select Time</mat-option>
+                                                    <mat-option value="2023-06-22T17:00:00+05:30">5:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:15:00+05:30">5:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:30:00+05:30">5:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:45:00+05:30">5:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:00:00+05:30">6:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:15:00+05:30">6:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:30:00+05:30">6:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:45:00+05:30">6:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:00:00+05:30">7:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:15:00+05:30">7:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:30:00+05:30">7:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:45:00+05:30">7:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:00:00+05:30">8:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:15:00+05:30">8:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:30:00+05:30">8:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:45:00+05:30">8:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:00:00+05:30">9:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:15:00+05:30">9:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:30:00+05:30">9:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:45:00+05:30">9:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:00:00+05:30">10:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:15:00+05:30">10:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:30:00+05:30">10:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:45:00+05:30">10:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:00:00+05:30">11:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:15:00+05:30">11:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:30:00+05:30">11:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:45:00+05:30">11:45 PM </mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-3"> <mat-label>FROM</mat-label><mat-form-field class="w-100">
+
+                                                <input matInput type="text">
+
+                                            </mat-form-field></div>
+                                        <div class="col-sm-3"> <mat-label class="label">To</mat-label><mat-form-field
+                                                class="w-100">
+
+                                                <input matInput type="text">
+
+                                            </mat-form-field></div>
+                                        <div class="col-sm-2"> <mat-label class="label">PICK
+                                                UP</mat-label><mat-form-field class="w-100">
+
+                                                <input matInput [matDatepicker]="picker">
+                                                <mat-datepicker-toggle matIconSuffix
+                                                    [for]="picker1"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker1></mat-datepicker>
+                                            </mat-form-field></div>
+                                        <div class="col-sm-2"> <mat-label class="label">PICK UP</mat-label>
+                                            <mat-form-field class="w-100">
+
+                                                <input matInput [matDatepicker]="picker">
+                                                <mat-datepicker-toggle matIconSuffix
+                                                    [for]="picker2"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker2></mat-datepicker>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-sm-2"><mat-label class="label">PICK UP AT</mat-label>
+                                            <mat-form-field class="w-100">
+
+                                                <mat-select name="food">
+                                                    <mat-option value="Select Time">Select Time</mat-option>
+                                                    <mat-option value="2023-06-22T17:00:00+05:30">5:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:15:00+05:30">5:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:30:00+05:30">5:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T17:45:00+05:30">5:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:00:00+05:30">6:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:15:00+05:30">6:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:30:00+05:30">6:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T18:45:00+05:30">6:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:00:00+05:30">7:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:15:00+05:30">7:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:30:00+05:30">7:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T19:45:00+05:30">7:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:00:00+05:30">8:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:15:00+05:30">8:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:30:00+05:30">8:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T20:45:00+05:30">8:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:00:00+05:30">9:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:15:00+05:30">9:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:30:00+05:30">9:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T21:45:00+05:30">9:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:00:00+05:30">10:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:15:00+05:30">10:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:30:00+05:30">10:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T22:45:00+05:30">10:45 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:00:00+05:30">11:00 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:15:00+05:30">11:15 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:30:00+05:30">11:30 PM </mat-option>
+                                                    <mat-option value="2023-06-22T23:45:00+05:30">11:45 PM </mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Local
+                            </div>
+                            <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">Airport
+                            </div>
+                            <div class="text-center search-button "> <button mat-raised-button>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

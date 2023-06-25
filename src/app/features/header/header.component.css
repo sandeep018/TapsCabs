@@ -1,0 +1,71 @@
+.top-header {
+    background-color: var(--primary);
+    font-size: .7rem;
+    padding: 0.2rem 0;
+}
+
+.top-header ul li {
+    float: left;
+
+}
+
+.top-header ul li a {
+    color: var(--font-color);
+    font-size: .8rem;
+    margin-right: .7rem;
+}
+
+
+
+.top-header ul li:last-child {
+    border-left: 1px solid var(--font-color);
+    padding-left: .6rem;
+}
+
+.top-header button {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: 0px;
+}
+
+header {
+    padding: 0.6rem 0;
+}
+
+.menu {
+    float: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px 0 0;
+}
+
+.menu li a {
+    color: var(--font-color);
+    font-size: 1rem;
+    position: relative;
+    padding: 6px 1px;
+}
+
+.support {
+    border: 1px solid var(--primary);
+    display: inline-block;
+    border-radius: 20px;
+    font-size: .8rem;
+    padding: 0.1rem;
+    padding-right: 0.7rem;
+
+}
+
+.support span {
+    background-color: var(--primary);
+    padding: 0.1rem 0.5rem;
+    border-radius: 20px;
+    margin-right: 3px;
+    display: inline-block;
+}
